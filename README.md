@@ -19,7 +19,7 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 ### Links
 
-- Live Site URL: [Live site URL](https://qr-code-component-jet.vercel.app/)
+- Live Site URL: [Live site URL](https://3-column-preview-card-component-theta-inky.vercel.app/)
 
 ## My process
 
