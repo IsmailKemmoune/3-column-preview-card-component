@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: var(--lexend);
+}
+
+:root {
+  /* Color */
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --color-p: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+
+  /* Font family */
+  --shoulders: "Big Shoulders Display", cursive;
+  --lexend: "Lexend Deca", sans-serif;
+
+  /* Font size */
+  --xxl: 3rem;
+  --xl: 2rem;
+  --l: 1.5rem;
+  --m: 1rem;
+  --s: 0.7rem;
+  --xs: 0.4rem;
+
+  /* Font wight */
+  --regular: 400;
+  --bold: 400;
+}
+
+/* Main */
+main {
+  background-color: var(--very-light-gray);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 1050px) {
+  main {
+    height: unset;
+    padding: 4rem 0;
+  }
+}
+
+/* Card */
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 70%;
+  min-width: 1050px;
+  max-width: 1250px;
+  height: fit-content;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
+@media only screen and (max-width: 1050px) {
+  .card {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: unset;
+    min-width: 90%;
+  }
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 2rem;
+  padding: 3rem 2rem;
+}
+
+/* Content */
+.content {
+  display: grid;
+  grid-template-rows: 1fr 1fr 2fr;
+  row-gap: 10px;
+}
+.content h1 {
+  font-family: var(--shoulders);
+  color: var(--very-light-gray);
+  font-size: var(--xxl);
+}
+.content p {
+  line-height: 2;
+  color: var(--color-p);
+  padding-right: 3rem;
+  font-weight: var(--regular);
+}
+
+/* Button */
+.learn-more-btn {
+  background-color: var(--very-light-gray);
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  width: fit-content;
+  margin-top: 5rem;
+}
+
+.learn-more-btn:hover {
+  cursor: pointer;
+  color: var(--very-light-gray);
+  border: 2px solid var(--very-light-gray);
+}
+
+/* Icon */
+.icon {
+  height: 3rem;
+  width: auto;
+}
+
+/* Variations */
+.sedans {
+  background-color: var(--bright-orange);
+}
+.suvs {
+  background-color: var(--dark-cyan);
+}
+.luxury {
+  background-color: var(--very-dark-cyan);
+}
+.orange {
+  color: var(--bright-orange);
+}
+
+.orange:hover {
+  background-color: var(--bright-orange);
+}
+.cyan {
+  color: var(--dark-cyan);
+}
+.cyan:hover {
+  background-color: var(--dark-cyan);
+}
+.dark-cyan {
+  color: var(--very-dark-cyan);
+}
+.dark-cyan:hover {
+  background-color: var(--very-dark-cyan-orange);
+}
